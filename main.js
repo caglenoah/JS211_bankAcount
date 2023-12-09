@@ -56,7 +56,6 @@ if (typeof describe === "function") {
   });
 
   describe("#Testing transaction creation", function () {
-    //checks if deposit() is functioning how I want it to
     it("Should create a transaction correctly for a deposit", function () {
       let t1 = new Transaction(30, "Deposit");
       assert.equal(t1.amount, 30);
